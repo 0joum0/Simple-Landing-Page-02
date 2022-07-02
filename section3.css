@@ -1,0 +1,52 @@
+
+.section3 h2{
+    padding-top: 100px;
+    text-align: center;
+    
+}
+.section3{
+    margin-left: 50px;
+    margin-right: 50px;
+    animation: fadeDown 1000ms forwards;
+    opacity: 0;
+    animation-delay: 3400ms;
+}
+
+@keyframes fadeDown{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.content-section3{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   vertical-align: center;
+   padding-bottom: 50px;
+}
+
+.p1-section3, .p2-section3{
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: roboto;
+    font-size: 20px;
+    
+}
+
+
+
+.girl{
+    width: 400px;
+    border-radius: 100000px;
+    right: 200px;
+    
+    
+}

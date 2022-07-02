@@ -1,0 +1,53 @@
+.section2{
+    
+    width: auto;
+    margin-top: 100px;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 200px;
+    margin-right: 200px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.18);
+    background-color: white;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    animation: fadeDown 1000ms forwards;
+    opacity: 0;
+    animation-delay: 3000ms;
+}
+
+@keyframes fadeDown{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+h2{
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 30px;
+    cursor: pointer;
+    padding-bottom: 20px;
+    
+}
+.h2-span{
+    text-decoration: underline;
+    text-decoration-color: rgb(216, 0, 50);
+    text-decoration-thickness: 4px;
+    text-decoration-skip-ink: none;
+}
+
+.clients{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}

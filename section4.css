@@ -1,0 +1,47 @@
+.section4 h2{
+    padding-top: 100px;
+    text-align: center;
+    
+}
+.section4{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 50px;
+    animation: fadeDown 1000ms forwards;
+    opacity: 0;
+    animation-delay: 3800ms;
+}
+
+@keyframes fadeDown{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+}
+.projects-card{
+    display: grid;
+    row-gap: 40px;
+    column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.projects-card img{
+    width: 100%;
+}
+
+.section4 button{
+    margin-top: 50px;
+}
+
+.card:hover{
+    transform: scale(1.2);
+}
+
+.card{
+    transition: 0.7s ease;
+}

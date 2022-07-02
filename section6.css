@@ -1,0 +1,66 @@
+.section6 h2{
+    padding-top: 100px;
+    text-align: center;
+    
+}
+
+.section6{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    animation: fadeDown 1000ms forwards;
+    opacity: 0;
+    animation-delay: 3900ms;
+}
+
+@keyframes fadeDown{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    
+}
+
+.in1, .in2{
+    display: flex;
+    justify-content: center;
+
+}
+.input1, .input2{
+    
+    height: 50px;
+    flex: 1;
+    border-radius: 25px;
+    border-style: solid;
+    margin: 20px 20px;
+    padding-left: 30px;
+    border-color: rgb(214, 211, 211);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.18);
+    font-family: roboto;
+}
+
+textarea{
+    font-family: roboto;
+    flex: 1;
+    height: 160px;
+    border-radius: 25px;
+    border-style: solid;
+    margin: 20px 20px;
+    padding: 16px 30px;
+    border-color: rgb(214, 211, 211);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.18);
+    
+}
+
+
+
+
+.section6 button{
+    margin: 20px 120px;
+    
+}

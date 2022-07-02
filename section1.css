@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+}
+.section1{
+    background: url(style/rect.png) no-repeat;
+    
+    background-size: cover;
+    background-position: center;
+    height: 630px;
+    padding-top: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section1{
+    margin-left: 124px;
+    
+}
+
+
+
+
+.welcome{
+    font-family: roboto;
+    font-size: 24px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    padding-top: 80px;
+    animation: fadeIn 800ms forwards;
+    animation-delay: 400ms;
+    opacity: 0;
+}
+
+@keyframes fadeIn{
+    
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.web-design{
+    font-family: roboto;
+    font-size: 36px;
+    font-weight: 900;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    animation: fadeRight 800ms forwards cubic-bezier(0.22, 0.32, 0, 1.54);
+    animation-delay: 800ms;
+    opacity: 0;
+}
+@keyframes fadeRight{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.GT{
+    color: rgb(216, 0, 50);
+}
+.get-started2{
+    border: none;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    border-radius: 150px;
+    background-color: rgb(216, 0, 50);
+    color: white;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;    
+    
+    animation: fade01 1500ms forwards cubic-bezier(0.22, 0.32, 0, 2);
+    animation-delay: 1400ms;
+    opacity: 0;
+
+}
+.get-started2:hover{
+    opacity: 0.8;
+}
+.get-started2:active{
+    background-color: rgb(165, 0, 38);  
+}
+
+@keyframes fade01{
+    from{
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+.learn-more{
+    border: none;
+    padding: 10px 30px;
+    
+    
+    border-radius: 150px;
+    background-color: rgb(65, 234, 212);
+    color: black;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;    
+    animation: fade01 1500ms forwards cubic-bezier(0.22, 0.32, 0, 2);
+    animation-delay: 1800ms;
+    opacity: 0;
+}
+.learn-more:hover{
+    opacity: 0.8;
+}
+.learn-more:active{
+    background-color: rgb(46, 201, 180);
+
+}
+@keyframes fade01{
+    from{
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile{
+    
+    
+    margin-right: 50px;
+    margin-top: -50px;
+    animation: fade02 1500ms forwards cubic-bezier(0.22, 0.32, 0, 1);
+    animation-delay: 2000ms;
+    opacity: 0;
+}
+@keyframes fade02{
+    from{
+        opacity: 0;
+        transform: translateX(1000px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.p1{
+    position: absolute;
+    left: 350px;
+    top: 126px;
+    transform: rotate(180deg);
+}
+
+.p2{
+    position: absolute;
+    left: 650px;
+    top: 150px;
+    transform: rotate(200deg);
+}
+
+.p3{
+    position: absolute;
+    left: 550px;
+    top: 306px;
+    transform: rotate(300deg);
+}
+
+.p1, .p2, .p3{
+    opacity: 0;
+    animation-name: fadeIn, rotate;
+    animation-duration: 8000ms, 80s;
+    animation-delay: 1800ms;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in, linear;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    
+}
